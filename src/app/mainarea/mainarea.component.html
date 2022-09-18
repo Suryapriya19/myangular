@@ -1,0 +1,7 @@
+<h3>mainarea Component!</h3>
+<label for="uname">Username : </label>
+<input type="text" [(ngModel)]="username" (keyup)="oninput($event)">
+<p>Username: {{username}}</p>
+<button [disabled]="isdisabled" (click)="onbtn()">click</button>
+<!-- <button (click)="onbtn($event)">click</button> -->
+
