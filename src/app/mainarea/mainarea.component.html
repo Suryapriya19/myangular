@@ -12,3 +12,11 @@
     <h5>Cars</h5>
     <li *ngFor="let car of cars; index as i,first as isfirst,last as islast"> {{car.name}} {{i}} {{isfirst}} {{islast}} </li>
 </ul>
+
+<table>
+    <th> name</th>
+    <th> index</th>
+    <th> first</th>
+    <th> last</th>
+    <tr *ngFor="let car of cars; index as i,first as isfirst,last as islast"> <td>{{car.name}} </td> <td> {{i}} </td> <td> {{isfirst}} </td> <td> {{islast}} </td></tr>
+</table>
