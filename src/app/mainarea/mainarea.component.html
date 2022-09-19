@@ -1,7 +1,8 @@
-<h3>mainarea Component!</h3>
+<h3>mainarea Component</h3>
 <label for="uname">Username : </label>
-<input type="text" [(ngModel)]="username" (keyup)="oninput($event)">
+<input type="text" [(ngModel)]="username">
 <p>Username: {{username}}</p>
-<button [disabled]="isdisabled" (click)="onbtn()">click</button>
+<button [disabled]="!username" (click)="onbtn()">click</button>
 <!-- <button (click)="onbtn($event)">click</button> -->
-
+<p [ngStyle]="{'font-size':!isActive?'50px':'20px'}"> This is ngStyle </p>
+<p (click)="isActive=!isActive" [ngClass]="isActive?'isActive':'inActive'"> This is ngClass</p>
