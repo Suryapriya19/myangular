@@ -8,3 +8,7 @@
 <p (click)="isActive=!isActive" [ngClass]="isActive?'isActive':'inActive'"> This is ngClass</p>
 <p *ngIf="isActive ; else elseblock">Structrual Derivatives</p>
 <ng-template #elseblock>This is the else part </ng-template>
+<ul>
+    <h5>Cars</h5>
+    <li *ngFor="let car of cars; index as i,first as isfirst,last as islast"> {{car.name}} {{i}} {{isfirst}} {{islast}} </li>
+</ul>

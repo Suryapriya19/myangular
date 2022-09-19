@@ -8,16 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainAreaComponent implements OnInit{
   // title:any;
-  username:any;
+  username!:string;
   // isdisabled:boolean=true;
   isActive:boolean=true;
   inActive:boolean=true;
+  // cars=['ford','tata','rolls royce','triber','kia']
+  cars=[{'id':1,'name':'ford','color':'blue'},{'id':2,'name':'tata','color':'silver'},{'id':3,'name':'rolls royce','color':'royal blue'},{'id':4,'name':'kia','color':'red'}]
   constructor(){}
   ngOnInit(): void {
   }
   onbtn(){
     // this.isdisabled=true;
-    this.username=!this.username;
+    
     this.username='';
     
     // console.log(this.title);
