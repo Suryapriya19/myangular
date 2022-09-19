@@ -6,3 +6,5 @@
 <!-- <button (click)="onbtn($event)">click</button> -->
 <!-- <p [ngStyle]="{'font-size':!isActive?'50px':'20px'}"> This is ngStyle </p> -->
 <p (click)="isActive=!isActive" [ngClass]="isActive?'isActive':'inActive'"> This is ngClass</p>
+<p *ngIf="isActive ; else elseblock">Structrual Derivatives</p>
+<ng-template #elseblock>This is the else part </ng-template>
