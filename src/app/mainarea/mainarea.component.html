@@ -4,5 +4,5 @@
 <p>Username: {{username}}</p>
 <button [disabled]="!username" (click)="onbtn()">click</button>
 <!-- <button (click)="onbtn($event)">click</button> -->
-<p [ngStyle]="{'font-size':!isActive?'50px':'20px'}"> This is ngStyle </p>
+<!-- <p [ngStyle]="{'font-size':!isActive?'50px':'20px'}"> This is ngStyle </p> -->
 <p (click)="isActive=!isActive" [ngClass]="isActive?'isActive':'inActive'"> This is ngClass</p>

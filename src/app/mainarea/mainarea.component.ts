@@ -8,21 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainAreaComponent implements OnInit{
   // title:any;
-  username:string='';
-  isdisabled:boolean=true;
+  username:any;
+  // isdisabled:boolean=true;
+  isActive:boolean=true;
+  inActive:boolean=true;
   constructor(){}
   ngOnInit(): void {
   }
   onbtn(){
-    this.isdisabled=true;
+    // this.isdisabled=true;
+    this.username=!this.username;
     this.username='';
     
     // console.log(this.title);
   }
-  oninput(event:any){
-    this.isdisabled=false;
-    // this.title=event.target.value 
-    console.log(event);
-    }
+  // oninput(event:any){
+  //   this.isdisabled=false;
+  //   // this.title=event.target.value 
+  //   console.log(event);
+  //   }
 
 }
