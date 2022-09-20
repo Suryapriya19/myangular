@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myangular';
+  itemDetails={'itemId':1,'itemName':'car'}
+  item=['item1','item2']
+  newItemEmitted(event:any){
+    this.item.push(event);
+    console.log(event);
+    
+  }
 }
