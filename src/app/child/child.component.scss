@@ -1,0 +1,25 @@
+.user{
+    display: inline-flex;
+    border: 2px solid;
+    border-radius: 13px;
+    padding: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+ .profile-pic img{
+        border-radius: 50px;
+        width: 100px;
+  }
+
+.userdetails{
+    align-items: center;
+    margin: 20px;
+
+}
+.remove-user button{
+    
+        margin: 20px
+    
+}
+
