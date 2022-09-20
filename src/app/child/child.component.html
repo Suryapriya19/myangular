@@ -1,0 +1,18 @@
+<!-- <p>child works!</p>
+<input type="text" [(ngModel)]="newItem">
+<button (click)="addItem()"> Add Item</button> -->
+
+
+    <div class="user">
+        <div class="profile-pic">
+            <img [src]="user.avatar" >
+        </div>
+        <div class="userdetails">
+            <div class="uname">{{user.first_name}} {{user.last_name}} </div>
+            <div class="uemail">{{user.email}}</div>
+        </div>
+        <div class="remove-user">
+            <button (click)="removeUser()"> Remove User</button>
+        </div>
+    </div>
+   

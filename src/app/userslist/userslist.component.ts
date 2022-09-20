@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 interface User{
   id:number,
   email:string,
@@ -62,10 +62,9 @@ usersList:User[]=[];
     }
     ]
   }
-  removeUser(userIndex:number){
-    console.log('clicked',userIndex);
-    this.usersList.splice(userIndex,1);
-    
+  userRemoved(userIndex:number){
+     this.usersList.splice(userIndex,1);
   }
+  
 
 }
