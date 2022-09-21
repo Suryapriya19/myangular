@@ -6,4 +6,17 @@
 
 </div> -->
 
-<app-userslist></app-userslist>
+
+<!-- <app-userslist></app-userslist> -->
+  <app-to-do-child (todo)="getEvent($event)"></app-to-do-child><br><br>
+    <!-- <app-parent></app-parent> -->
+
+<ng-container *ngFor="let data of inputArr"> 
+   
+       
+          <input type="checkbox" for="cbox">
+          <label >{{data}} </label><br>
+  
+  </ng-container> 
+  
+<!-- <app-to-do-child></app-to-do-child> -->
