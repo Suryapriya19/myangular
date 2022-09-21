@@ -14,6 +14,7 @@ export class AppComponent {
   //   console.log(event);
     
   // }
+  
   inputArr:Array<string>=[];
   isChecked:boolean=true;
 
