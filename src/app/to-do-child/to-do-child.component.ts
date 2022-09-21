@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class ToDoChildComponent implements OnInit {
   // @Input() checkedd:any;
   @Output () todo=new EventEmitter();
-  inputData:string=''
+  inputData:string='';
   
   
   constructor() {}
@@ -24,3 +24,4 @@ export class ToDoChildComponent implements OnInit {
   }
 
 }
+

@@ -20,6 +20,9 @@ export class AppComponent {
   getEvent(event:string){
     this.inputArr.push(event)
   }
+  onremove(remInd:number){
+    this.inputArr.splice(remInd,1)
+  }
 
 
 
