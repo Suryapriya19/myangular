@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 interface User{
   id:number,
   email:string,
@@ -14,7 +15,7 @@ interface User{
 export class UserslistComponent implements OnInit {
 usersList:User[]=[];
 
-  constructor() { }
+  constructor(private route:ActivatedRoute ) {}
 
   ngOnInit(): void {
     this.usersList=[
@@ -61,6 +62,11 @@ usersList:User[]=[];
         "avatar": "https://reqres.in/img/faces/12-image.jpg"
     }
     ]
+    this.route.params.subscribe((userslist)=>{
+      console.log('userslisttt',userslist);
+      
+    })
+
   }
   userRemoved(userIndex:number){
      this.usersList.splice(userIndex,1);
