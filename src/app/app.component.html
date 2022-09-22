@@ -8,15 +8,19 @@
 
 
 <!-- <app-userslist></app-userslist> -->
-<app-to-do-child (todo)="getEvent($event)"></app-to-do-child><br><br>
+<!-- <app-to-do-child (todo)="getEvent($event)"></app-to-do-child><br><br> -->
 <!-- <app-parent></app-parent> -->
 
-<ng-container *ngFor="let data of inputArr;index as i">
+<!-- <ng-container *ngFor="let data of inputArr;index as i">
 
 
   <input type="checkbox" for="cbox">
   <label>{{data}} </label><br>
   <button (click)="onremove(i)"> Remove</button>
-</ng-container>
+</ng-container> -->
 
 <!-- <app-to-do-child></app-to-do-child> -->
+
+<router-outlet>
+  
+</router-outlet>
