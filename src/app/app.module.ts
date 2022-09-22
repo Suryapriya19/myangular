@@ -10,6 +10,7 @@ import { ChildComponent } from './child/child.component';
 import { UserslistComponent } from './userslist/userslist.component';
 import { ToDoChildComponent } from './to-do-child/to-do-child.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     ChildComponent,
     UserslistComponent,
     ToDoChildComponent,
-    AboutusComponent
+    AboutusComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
