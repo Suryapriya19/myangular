@@ -11,15 +11,19 @@ const routes: Routes = [
     path:'aboutus',
     component:AboutusComponent,
     children:[{
-      path:':userslist',
+      path:'userslist',
       component:UserslistComponent,
     }]
   },
   
   {
     path:'to-do-child',
-    component:ToDoChildComponent
+    component:ToDoChildComponent,
+    
   },
+  // {path:'userslist',
+  //     component:UserslistComponent
+  //   },
   {
     path:'**',
     component:PageNotFoundComponent
@@ -32,3 +36,6 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+
+

@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-to-do-child',
@@ -11,10 +12,12 @@ export class ToDoChildComponent implements OnInit {
   inputData:string='';
   
   
-  constructor() {}
+  constructor(private router:Router,private route:ActivatedRoute ) {}
 
   ngOnInit(): void {
+    this.router.navigate(['/aboutus/userslist'])
   }
+
   onbtnsubmit(){
     // console.log('clicked');
     // this.inputArr.push(this.inputData);
